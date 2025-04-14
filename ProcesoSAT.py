@@ -9,8 +9,9 @@ import shutil
 
 app = Flask(__name__)
 app.secret_key = 'your_secret_key_here'  # Needed for flash messages
-##Puerto 80
-##app.run(host='0.0.0.0', port=80)
+# Usa la variable de entorno PORT, o por defecto el 8080
+port = int(os.environ.get("PORT", 8080))
+app.run(host='0.0.0.0', port=port)
 
 # Variables globales para almacenar información del procesamiento
 ultimo_excel_generado = None
