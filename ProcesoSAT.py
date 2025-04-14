@@ -6,8 +6,11 @@ from flask import Flask, render_template, request, redirect, url_for, send_file,
 import zipfile
 import shutil
 
+
 app = Flask(__name__)
 app.secret_key = 'your_secret_key_here'  # Needed for flash messages
+##Puerto 80
+app.run(host='0.0.0.0', port=80)
 
 # Variables globales para almacenar información del procesamiento
 ultimo_excel_generado = None
