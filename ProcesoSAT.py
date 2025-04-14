@@ -239,7 +239,7 @@ def procesar_directorio(origen_folder, destino_folder):
     return output_excel, total_archivos, nit_receptor_unico
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False)
     # Usa la variable de entorno PORT, o por defecto el 8080
     port = int(os.environ.get("PORT", 8080))
     app.run(host='0.0.0.0', port=port)
