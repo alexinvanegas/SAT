@@ -106,7 +106,7 @@
                 <path d="M5.884 6.68a.5.5 0 1 0-.768.64L7.349 10l-2.233 2.68a.5.5 0 0 0 .768.64L8 10.781l2.116 2.54a.5.5 0 0 0 .768-.641L8.651 10l2.233-2.68a.5.5 0 0 0-.768-.64L8 9.219l-2.116-2.54z"/>
                 <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5v2z"/>
             </svg>
-            <h1 class="mt-2">Procesador de Archivos XML - SAT</h1>
+            <h1 class="mt-2">Procesador de Archivos DTE XML</h1>
             <p class="lead">Suba un archivo ZIP que contenga documentos XML para procesarlos</p>
         </div>
         
@@ -122,7 +122,15 @@
         
         <div class="info-box">
             <h5>Información del Proceso</h5>
-            <p>Esta herramienta le permitirá procesar archivos XML de facturas electrónicas (FEL) y generar un archivo Excel con los datos extraídos.</p>
+            <p>
+                Esta herramienta le permite procesar archivos DTE en formato XML de facturas electrónicas (FEL) emitidas por la SAT de Guatemala y generar un archivo Excel con la información extraída.
+            </p>
+            <p>El archivo Excel generado incluirá tres hojas:</p>
+            <ul>
+                <li><strong>Listado General:</strong> Resumen con los totales de todos los DTE procesados.</li>
+                <li><strong>Detalle de Artículos:</strong> Información detallada de cada artículo contenido en los DTE.</li>
+                <li><strong>Proveedores:</strong> Listado completo de todos los proveedores identificados en los documentos.</li>
+            </ul>
         </div>
         
         <div class="process-steps">
@@ -171,7 +179,10 @@
         </form>
         
         <div class="footer">
-            <p>Procesador de Archivos XML - SAT &copy; 2025</p>
+            <div style="background-color: #fff3cd; color: #856404; border: 1px solid #ffeeba; padding: 10px; margin-top: 15px; border-radius: 5px;">
+                <strong>Nota:</strong> Si deseas esta herramienta para correrla en tu entorno local, puedes contactarme al <a href="mailto:info@todocaes.com">info@todocaes.com</a>.
+            </div>
+            <p>Procesador de Archivos DTE - SAT &copy; 2025</p>
         </div>
     </div>
 
